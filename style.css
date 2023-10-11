@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+section {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+
+.container {
+    width: 94%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.img-container {
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 010px;
+    background-image: url(image-product-mobile.jpg);
+    background-size: cover;
+    background-repeat: 0;
+}
+
+.desc-container {
+    width: 100%;
+    height: 60%;
+    padding: 20px;
+}
+
+.tag {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 10px;
+
+}
+
+.scent-name {
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 20px;
+}
+
+.scent-description {
+    font-family: 'Montserrat', sans-serif;
+    color: hsla(228, 12%, 48%, 0.8);
+    font-size: 14px;
+    line-height: 1.6;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.pricing {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.current-price {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.previous-price {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    color: hsla(228, 12%, 48%, 0.8);
+    font-weight: 500;
+
+}
+
+.buy {
+    width: 100%;
+    height: 58px;
+    border-radius: 15px;
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buy img {
+    margin-right: 10px;
+}
+
+.buy h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .container{
+        height: 450px;
+        width: 600px;
+        display: flex;
+    }
+
+    .img-container {
+        height: 100%;
+        width: 50%;
+        background-image: url(image-product-desktop.jpg);
+    }
+    .desc-container {
+        width: 50%;
+        height: 100%;
+        padding: 30px;
+    }
+    .scent-name{
+        padding-right: 20px;
+    }
+    .scent-description{
+        padding-right: 10px;
+        line-height: 1.8;
+    }
+    .pricing{
+        margin-bottom: 30px;
+    }
+    .buy{
+        height: 50px;
+    }
+}
